@@ -4,10 +4,10 @@ This section covers the compilation of PyTorch and related libraries. Our goal i
 installed at [LCRC SWING cluster](https://www.lcrc.anl.gov/systems/resources/swing/) 
 and [ALCF ThetaGPU](https://www.alcf.anl.gov/support-center/theta/theta-thetagpu-overview#theta-gpu).
 
-
+Now we will initialize the process by using the conda  environment file [A100_env.yml](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/A100_env.yml). 
 
 ```
-conda env create --file [A100_env.yml](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/A100_env.yml) -p /your/path
+conda env create --file A100_env.yml -p /your/path
 
 
 conda activate /your/path
