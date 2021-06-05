@@ -1,0 +1,24 @@
+name: GPytorch
+channels:
+  - pytorch
+  - defaults
+  - conda-forge
+dependencies:
+  - python==3.7.*
+  - pip
+  - numpy
+  - tqdm
+  - h5py 
+  - magma-cuda110
+  - cudatoolkit=11.0
+  - pytorch=1.7.1
+  - tensorboard
+  - scikit-learn
+  - boto3
+  - requests
+  - six
+  - nltk
+  - html2text
+  - progressbar
+  - pandas
+  - matplotlib
