@@ -5,6 +5,9 @@ Documentation for the active learning (AL) workflow developed as a part of the a
 __For more details, please refer to the [paper](https://www.url_to_be_added.com).__
 
 
+
+## What are the capabilities of AL4ECG workflow ?
+
 The workflow is built as a [PyTorch](https://pytorch.org) based GPU accelerated framework and offers the following capabilities:
 
 * GPU accelerated Scalable Gaussian Processes and Exact Deep Kernel Learning (DKL) based on [GPyTorch library](https://gpytorch.ai)
