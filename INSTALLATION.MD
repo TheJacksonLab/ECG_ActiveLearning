@@ -16,4 +16,6 @@ pip3 install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio==0.8.1 -f ht
 
 pip install  gpytorch==1.4.1
 
+pip install GPyOpt==1.2.6
+
 ```
