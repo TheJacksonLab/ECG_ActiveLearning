@@ -7,7 +7,7 @@ __For more details, please refer to the [paper](https://www.url_to_be_added.com)
 If you are using this active learning workflow  in your research paper, please cite us as
 ```
 @article{AL4ECG,
-  title={Machine-learned interatomic potentials by active learning: amorphous and liquid hafnium dioxide},
+  title={Active Learning Strategies for ElectronicCoarse-Graining via Deep Kernel Learning},
   author={Sivaraman, Ganesh and Jackson, Nicholas},
   journal={XX},
   volume={YY},
