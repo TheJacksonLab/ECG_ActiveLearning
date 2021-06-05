@@ -1,4 +1,4 @@
-def plot_metric_write(train_size,err_list,r2_list, err_unscaled ,r2_unscaled , indlist):
+def plot_metric_write(train_size,err_list,r2_list, err_unscaled ,r2_unscaled , indlist, tag=None):
     '''
     Plot the metric/ write evolution history  over the trial using this function
     :param train_size: (list)
@@ -7,6 +7,7 @@ def plot_metric_write(train_size,err_list,r2_list, err_unscaled ,r2_unscaled , i
     :param err_unscaled : (list) Error rescaled to energy scale
     :param r2_unscaled : (list)
     :param indlist: (list) 
+    :param tag: (str) String to tag to output file name 
     Return type: figure object
     '''
     import matplotlib.pyplot as plt
@@ -52,8 +53,12 @@ def plot_metric_write(train_size,err_list,r2_list, err_unscaled ,r2_unscaled , i
     data = np.array([xarray, yarray, zarray, array_err_unscaled, array_r2_unscaled])
     data = data.T
 
-    datafile_path = "AL_history.dat"
     indexarray_path = "AL_train_Array.dat"
+
+    if tag == None:
+        datafile_path = "AL_history.dat"
+    elif tag != None:
+        datafile_path = "AL_history_{}.dat".format(tag)
 
     with open(datafile_path, 'w+') as datafile_id:
         np.savetxt(datafile_id, data, fmt=['%d','%f','%f','%f','%f'])

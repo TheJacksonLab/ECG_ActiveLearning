@@ -65,16 +65,13 @@ def DKLmodel(x_train, x_test, y_train, y_test, numy=1, n_iter=500,\
     """
 
     if GP == "DKL" :
-        likelihood = gpytorch.likelihoods.GaussianLikelihood( noise_prior=gpytorch.priors.SmoothedBoxPrior(0.15, 1.5, sigma=0.5) ) 
+        likelihood = gpytorch.likelihoods.GaussianLikelihood( ) # noise_prior=gpytorch.priors.SmoothedBoxPrior(0.15, 1.5, sigma=0.5) 
         model = DKLRegressionModel(x_train, y_train, likelihood, kernel, x_train.size(-1), l1out, l2out, l3out, final)
 
     if torch.cuda.is_available():
         model = model.cuda()
         likelihood = likelihood.cuda()
 
-
-    model.train()
-    likelihood.train()
 
     #Define the parameters to optimize
     if GP == "DKL":
@@ -85,9 +82,14 @@ def DKLmodel(x_train, x_test, y_train, y_test, numy=1, n_iter=500,\
     {'params': model.likelihood.parameters()},
 ], lr=lr)
 
+    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=100, gamma=0.1)    
+
     # "Loss" for GPs - the marginal log likelihood
     mll = gpytorch.mlls.ExactMarginalLogLikelihood(likelihood, model)
     #training_iter = 500
+    
+    model.train()
+    likelihood.train()
 
     for i in range(n_iter):
         optimizer.zero_grad()
@@ -98,6 +100,7 @@ def DKLmodel(x_train, x_test, y_train, y_test, numy=1, n_iter=500,\
             if i % 100  == 0 or i == n_iter - 1:
                 print('Iter %d/%d - Loss: %.3f' % (i + 1, n_iter, loss.item()))
         optimizer.step()
+        scheduler.step()
 
     mse, r2, predictions = InferGPModel(likelihood, model, x_test, y_test)
     gpnoise = estimate_gpnoise(likelihood, verbose=True)

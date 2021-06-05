@@ -162,15 +162,18 @@ def InferGPModel(likelihood, model, Xinfer, YTrue, scaleY=None):
     rmse, r2, predictions: float, float, tensor
     """ 
     from sklearn.metrics import mean_squared_error, r2_score
-    import numpy
-    if type(Xinfer) == numpy.ndarray:
+    import numpy as np 
+
+    if type(Xinfer) == np.ndarray:
         use_cuda = torch.cuda.is_available()
         dtype = torch.cuda.FloatTensor if use_cuda else torch.FloatTensor
         Xinfer = torch.from_numpy(Xinfer).type(dtype)    
         YTrue = torch.from_numpy(YTrue).type(dtype)
+
     # Set into eval mode
     model.eval()
     likelihood.eval()
+
     with torch.no_grad(), gpytorch.settings.fast_pred_var():
         predictions = likelihood(model(Xinfer))
         mean = predictions.mean
@@ -189,7 +192,7 @@ def InferGPModel(likelihood, model, Xinfer, YTrue, scaleY=None):
     mse = mean_squared_error(YTrue,mean)
     r2 = r2_score(YTrue,mean)
 
-    return numpy.sqrt(mse), r2, predictions
+    return np.sqrt(mse), r2, predictions
 
 
 def estimate_gpnoise(likelihood, verbose=True):
