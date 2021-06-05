@@ -19,8 +19,8 @@ The workflow is built as a [PyTorch](https://pytorch.org) based GPU accelerated 
 
 Running GPyTorch on A100 GPU has the following basic requirments:
 
-* CUDA 11.0
-* MAGMA support for CUDA 11.0
+* MAGMA + CUDA 11.0
+
 
 The step-by-step compilation is covered in [INSTALLATION.MD](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/INSTALLATION.MD)
 
