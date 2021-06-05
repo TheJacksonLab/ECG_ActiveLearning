@@ -25,6 +25,7 @@ Running GPyTorch on A100 GPU has the following basic requirments:
 The step-by-step compilation is covered in [INSTALLATION.MD](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/INSTALLATION.MD)
 
 
+## How do i cite AL4ECG workflow ?
 
 If you are using this active learning workflow  in your research paper, please cite us as
 ```
