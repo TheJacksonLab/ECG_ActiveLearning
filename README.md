@@ -1,15 +1,17 @@
 # AL4ECG : Active Learning for Electronic Coarse Graining 
 
 
-Documentation for the active learning workflow developed as a part of the article "Active Learning Strategies for ElectronicCoarse-Graining via Deep Kernel Learning". 
+Documentation for the active learning (AL) workflow developed as a part of the article "Active Learning Strategies for ElectronicCoarse-Graining via Deep Kernel Learning". 
 __For more details, please refer to the [paper](https://www.url_to_be_added.com).__
 
 
-The workflow is built using the PyTorch based GPU acceleration and offers the following capabilities:
+The workflow is built as a [PyTorch](https://pytorch.org) based GPU accelerated framework and offers the following capabilities:
 
-* Cookie 
-* Panda
-* Wonderful
+* GPU accelerated Scalable Gaussian Processes and Exact Deep Kernel Learning (DKL) based on [GPyTorch library](https://gpytorch.ai)
+* Bayesian Optimization for DKL based on GPyOpt library 
+* PyTorch based numeric implementation  AL query strategy beyond standard GPR based uncertainty.
+
+
 
 If you are using this active learning workflow  in your research paper, please cite us as
 ```
