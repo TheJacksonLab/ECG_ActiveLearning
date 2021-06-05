@@ -4,6 +4,13 @@
 Documentation for the active learning workflow developed as a part of the article "Active Learning Strategies for ElectronicCoarse-Graining via Deep Kernel Learning". 
 __For more details, please refer to the [paper](https://www.url_to_be_added.com).__
 
+
+The workflow is built using the PyTorch based GPU acceleration and offers the following capabilities:
+
+* Cookie 
+* Panda
+* Wonderful
+
 If you are using this active learning workflow  in your research paper, please cite us as
 ```
 @article{AL4ECG,
