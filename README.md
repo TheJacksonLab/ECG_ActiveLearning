@@ -9,7 +9,9 @@ The workflow is built as a [PyTorch](https://pytorch.org) based GPU accelerated 
 
 * GPU accelerated Scalable Gaussian Processes and Exact Deep Kernel Learning (DKL) based on [GPyTorch library](https://gpytorch.ai)
 * Bayesian Optimization for DKL based on GPyOpt library 
-* PyTorch based numeric implementation  AL query strategy beyond standard GPR based uncertainty.
+* PyTorch based numeric implementation AL query strategy beyond standard GPR based uncertainty.
+* Capable of running on the state-of-the-art [NVIDIA A100 GPU's](https://www.nvidia.com/en-us/data-center/a100/).
+
 
 
 
