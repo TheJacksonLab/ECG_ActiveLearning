@@ -20,7 +20,7 @@ The workflow is built as a [PyTorch](https://pytorch.org) based GPU accelerated 
 
 ###  supervised learning methods
 * Gaussian Process Regression: Single and Multi-task
-* Deep Kernel Learning 
+* [Deep Kernel Learning](http://proceedings.mlr.press/v51/wilson16.html) 
 
 ### Kernels
 * Matern 
@@ -28,8 +28,8 @@ The workflow is built as a [PyTorch](https://pytorch.org) based GPU accelerated 
 
 ### AL queries
 * Random 
-* Uncertainty 
-* Expected Model Output Change (EMOC)
+* [Uncertainty](https://link.springer.com/article/10.1007/s11263-009-0268-3) 
+* Expected Model Output Changes [EMOC](https://link.springer.com/chapter/10.1007/978-3-319-10593-2_37)
 
 ## Installation 
 
@@ -63,3 +63,5 @@ If you are using this active learning workflow  in your research paper, please c
 
 ## Acknowledgements
 This  material  is  based  upon  work  supported  by  Laboratory  Directed  Research  and  Development (LDRD) funding from Argonne National Laboratory, provided by the Director, Office of Science, of the U.S. Department of Energy under Contract No. DE-AC02-06CH11357.
+
+
