@@ -19,3 +19,9 @@ pip install  gpytorch==1.4.1
 pip install GPyOpt==1.2.6
 
 ```
+
+The ECGMOD should be located and showed be referenced as below in the launch script :
+
+````
+export PYTHONPATH=/your/path/lib/python3.7/site-packages/
+````
