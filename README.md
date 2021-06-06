@@ -15,6 +15,22 @@ The workflow is built as a [PyTorch](https://pytorch.org) based GPU accelerated 
 * PyTorch based numeric implementation of AL query strategies using standard GPR based uncertainty and beyond.
 * Capable of running on the state-of-the-art [NVIDIA A100 GPU's](https://www.nvidia.com/en-us/data-center/a100/).
 
+
+## What are the type of  supervised learning method  and  AL queries are supported in the  AL4ECG workflow ?
+
+###  supervised learning methods
+* Gaussian Process Regression : Single and Multi-task
+* Deep Kernel Learning 
+
+### Kernels
+* Matern 
+* RBF
+
+### AL queries
+* Random 
+* Uncertainty 
+* Expected Model Output Change (EMOC)
+
 ## Installation 
 
 Running GPyTorch on A100 GPU has the following basic requirment:
