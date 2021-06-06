@@ -44,7 +44,7 @@ python -u  run_ecg.py  -json  config.json  -Nt 1500  -is  3   -qw 6900 -ml DKL  
 ```
 
 
-**2.  The DKL runs require a mandatory hyperparameter json file. This can be generated using Bayesian optimization
+**2.  The DKL runs require a mandatory hyperparameter json file. This can be generated using Bayesian optimization**
 
 The DKL BO script can be found in [run_DKL_Tuner.py](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/workflow/run_DKL_Tuner.py)
 
