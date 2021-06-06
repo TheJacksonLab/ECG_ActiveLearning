@@ -5,6 +5,7 @@ installed at [LCRC SWING cluster](https://www.lcrc.anl.gov/systems/resources/swi
 and [ALCF ThetaGPU](https://www.alcf.anl.gov/support-center/theta/theta-thetagpu-overview#theta-gpu).
 
 Now we will initialize the process by using the conda  environment file [A100_env.yml](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/A100_env.yml). 
+We had some trouble with the Conda provided compilations of PyTorch with Magma + CUDA 11.00 support. So we had to do the following to get the set up working: 
 
 ```
 conda env create --file A100_env.yml -p /your/path
