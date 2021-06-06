@@ -17,13 +17,17 @@ The workflow is built as a [PyTorch](https://pytorch.org) based GPU accelerated 
 
 ## Installation 
 
-Running GPyTorch on A100 GPU has the following basic requirments:
+Running GPyTorch on A100 GPU has the following basic requirment:
 
 * MAGMA + CUDA 11.0
 
 
 The step-by-step compilation is covered in [INSTALLATION.MD](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/INSTALLATION.MD)
 
+
+## How to run the workflow?
+
+Running the workflow is extensively covered in [RUN.MD](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/RUN.MD)
 
 ## How do i cite AL4ECG workflow ?
 
