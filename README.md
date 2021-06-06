@@ -16,10 +16,10 @@ The workflow is built as a [PyTorch](https://pytorch.org) based GPU accelerated 
 * Capable of running on the state-of-the-art [NVIDIA A100 GPU's](https://www.nvidia.com/en-us/data-center/a100/).
 
 
-## What are the type of  supervised learning method  and  AL queries are supported in the  AL4ECG workflow ?
+## What are the type of  supervised learning method  and  AL queries are supported in the  AL4ECG workflow?
 
 ###  supervised learning methods
-* Gaussian Process Regression : Single and Multi-task
+* Gaussian Process Regression: Single and Multi-task
 * Deep Kernel Learning 
 
 ### Kernels
