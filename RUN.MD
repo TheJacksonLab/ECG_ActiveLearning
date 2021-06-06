@@ -25,3 +25,19 @@ optional arguments:
   -ni , --niter         Number of iteration for converging GP
   -rs , --randomseed    Initialize the random seed
 ````
+
+The format for the configuration file to be used with the mixed temperature run is listed below. The hyperparameter json is frozen for a given CG resoution.
+
+```
+{
+"path" : "/please/change/to/your/path",
+"train_file" : "train_rigid.npy",
+"test_file" : "test_rigid.npy",
+"x_slice" : [0, 153], # feature dimension 
+"y_slice" : -4 , # We are only using HOMO
+"jump"    : {"1000K":[0, 1000],
+       "650K":[1000, 2000],
+       "300K":[2000, 3000],
+       "50K":[3000, 4000]}
+}
+```
