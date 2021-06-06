@@ -21,7 +21,7 @@ pip install GPyOpt==1.2.6
 
 ```
 
-The ECGMOD should be located and showed be referenced as below in the launch script :
+The ECGMOD should be located and should be referenced as below in the launch script :
 
 ````
 export PYTHONPATH=/your/path/lib/python3.7/site-packages/
