@@ -26,7 +26,9 @@ optional arguments:
   -rs , --randomseed    Initialize the random seed
 ````
 
-The format for the configuration file to be used with the mixed temperature run is listed below. The hyperparameter json is frozen for a given CG resoution.
+The format for the configuration file (--json) to be used with the mixed temperature run is listed below. The hyperparameter json is frozen for a given CG resolution.
+
+
 
 ```
 {
