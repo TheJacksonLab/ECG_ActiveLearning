@@ -1,14 +1,11 @@
 
+1. For the base workflow for training a GPR or DKL at a fixed temperatures can be found in [run_ecg.py](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/workflow/run_ecg.py). The usage is listed below:
 
 
-
-3. For the model training utilizing the dataset picked at mixted temperatures one must use the [run_mixedT_ECG.py](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/workflow/run_mixedT_ECG.py). The usage is listed below:
-
-
-````
-$ python run_mixedT_ECG.py -h
-usage: run_mixedT_ECG.py [-h] -json JSONFILENAME [-Nt] [-is] [-qw] [-s] [-ml]
-                         [-k] [-ni] [-rs]
+```
+$ python run_ecg.py -h
+usage: run_ecg.py [-h] -json JSONFILENAME [-Nt] [-is] [-qw] [-s] [-ml] [-k]
+                  [-ni] [-rs]
 
 A python workflow to run active learning for Electronic Coarse Graining
 
@@ -24,7 +21,44 @@ optional arguments:
   -k , --kernel         GP Kernel: RBF, MATERN
   -ni , --niter         Number of iteration for converging GP
   -rs , --randomseed    Initialize the random seed
-````
+
+```
+
+The mandatory configuration file has the following format with a path and specification of the single temperature csv file.
+
+```
+{
+"csv_name" : "/path/to/wB97x_rigid_gbcg_300K_cut.csv",
+"train_range" : [0,8500],
+"test_range" : [8700,9701],
+"x_slice" : [0, 153],
+"y_slice" : -3
+}
+```
+
+
+Example usage with a DKL is listed below 
+
+```
+python -u  run_ecg.py  -json  config.json  -Nt 1500  -is  3   -qw 6900 -ml DKL   -s  emoc   -k  RBF  -ni 300   -rs  123   > ECG_trial.out
+```
+
+
+*2.  The DKL runs require a mandatory hyperparameter json file. This can be generated using Bayesian optimization*
+
+
+
+
+
+3. For the model training utilizing the dataset picked at mixted temperatures one must use the [run_mixedT_ECG.py](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/workflow/run_mixedT_ECG.py). The usage is listed below:
+
+```
+python -u  run_mixedT_ECG.py   -json  config.json  -Nt 1500  -is  3   -qw 32495  -ml DKL   -s  emoc   -k  RBF  -ni 300   -rs 123   > ECG_trial.out
+
+```
+
+
+
 
 The format for the configuration file (--json) to be used with the mixed temperature run is listed below. The hyperparameter json is frozen for a given CG resolution.
 
