@@ -44,10 +44,29 @@ python -u  run_ecg.py  -json  config.json  -Nt 1500  -is  3   -qw 6900 -ml DKL  
 ```
 
 
-*2.  The DKL runs require a mandatory hyperparameter json file. This can be generated using Bayesian optimization*
+**2.  The DKL runs require a mandatory hyperparameter json file. This can be generated using Bayesian optimization
 
+The DKL BO script can be found in [run_DKL_Tuner.py](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/workflow/run_DKL_Tuner.py)
 
+An example usage:
 
+```
+python -u run_DKL_Tuner.py -rs 0 -Nbo 50 100  > DKL_BO.out
+```
+
+This will create a hyperparameter json file with the following format:
+
+```
+{
+    "lr": 0.0225,
+    "n_iter": 500.0,
+    "l1out": 600.0,
+    "l2out": 250.0,
+    "l3out": 200.0,
+    "final": 21.0,
+    "MAE": 0.5182790756225586
+}
+```
 
 
 3. For the model training utilizing the dataset picked at mixted temperatures one must use the [run_mixedT_ECG.py](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/workflow/run_mixedT_ECG.py). The usage is listed below:
