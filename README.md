@@ -62,6 +62,4 @@ If you are using this active learning workflow  in your research paper, please c
 ```
 
 ## Acknowledgements
-This  material  is  based  upon  work  supported  by  Laboratory  Directed  Research  and  Development (LDRD) funding from Argonne National Laboratory, provided by the Director, Office of Science, of the U.S. Department of Energy under Contract No. DE-AC02-06CH11357.
-
-
+This material is based upon work supported by Laboratory Directed Research and Development (LDRD-CLS-1-630) funding from Argonne National Laboratory, provided by the Director, Office of Science, of the U.S. Department of Energy under Contract No. DE-AC02-06CH11357. This research used resources of the Argonne Leadership Computing Facility, which is a DOE Office of Science User Facility supported under Contract DE-AC02-06CH11357. Argonne National Laboratory’s work was supported by the U.S. Department of Energy, Office of Science, under contract DE-AC02-06CH11357.  We gratefully acknowledge the computing resources provided on Bebop and  Swing,  high-performance computing clusters operated by the Laboratory Computing Resource Center at Argonne National Laboratory.
