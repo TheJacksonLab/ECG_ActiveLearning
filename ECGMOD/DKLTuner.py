@@ -1,3 +1,6 @@
+"""
+@author: gsivaraman@anl.gov
+"""
 import torch 
 import gpytorch
 from ECGMOD.GPmodels import InferGPModel, estimate_gpnoise 
