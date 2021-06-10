@@ -1,3 +1,6 @@
+"""
+@author: gsivaraman@anl.gov
+"""
 from copy import deepcopy
 
 class OTFSampler:
