@@ -1,3 +1,6 @@
+"""
+@author: gsivaraman@anl.gov
+"""
 def prepare_data(jsonfile,NormalizeY=False,NormalizeX=False):
     """
     Input Args:
