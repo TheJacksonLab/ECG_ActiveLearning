@@ -1,3 +1,6 @@
+"""
+@author: gsivaraman@anl.gov
+"""
 def plot_metric_write(train_size,err_list,r2_list, err_unscaled ,r2_unscaled , indlist, tag=None):
     '''
     Plot the metric/ write evolution history  over the trial using this function
