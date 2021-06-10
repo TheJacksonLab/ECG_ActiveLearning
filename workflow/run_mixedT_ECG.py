@@ -1,3 +1,6 @@
+"""
+@author: gsivaraman@anl.gov
+"""
 from ECGMOD.preprocess import prepare_data, return_tensor
 from ECGMOD.multiT_preprocess import multiT_data_loader
 from ECGMOD.OTFSample import OTFSampler
