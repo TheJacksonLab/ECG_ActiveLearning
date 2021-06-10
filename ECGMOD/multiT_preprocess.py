@@ -1,3 +1,6 @@
+"""
+@author: gsivaraman@anl.gov
+"""
 def multiT_data_loader(jsonfile, NormalizeY=False, NormalizeX=False):
     """
     Input Args:
