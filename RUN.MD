@@ -58,13 +58,13 @@ This will create a hyperparameter json file with the following format:
 
 ```
 {
-    "lr": 0.0225,
-    "n_iter": 500.0,
-    "l1out": 600.0,
-    "l2out": 250.0,
-    "l3out": 200.0,
+    "lr": 0.024,
+    "n_iter": 800.0,
+    "l1out": 1000.0,
+    "l2out": 300.0,
+    "l3out": 150.0,
     "final": 21.0,
-    "MAE": 0.5182790756225586
+    "MAE": 0.7796717286109924
 }
 ```
 
