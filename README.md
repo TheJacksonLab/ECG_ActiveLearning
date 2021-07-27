@@ -1,7 +1,7 @@
 # AL4ECG : Active Learning for Electronic Coarse Graining 
 
 
-Documentation for the active learning (AL) workflow developed as a part of the article "ATemperature Transferable ElectronicCoarse-Graining via Deep Kernel Learning and Active Learning". 
+Documentation for the active learning (AL) workflow developed as a part of the article "Temperature Transferable Electronic Coarse-Graining via Deep Kernel Learning and Active Learning". 
 __For more details, please refer to the [paper](https://www.url_to_be_added.com).__
 
 
@@ -50,7 +50,7 @@ Running the workflow is extensively covered in [RUN.MD](https://github.com/TheJa
 If you are using this active learning workflow  in your research paper, please cite us as
 ```
 @article{AL4ECG,
-  title={Temperature Transferable ElectronicCoarse-Graining via Deep Kernel Learning and Active Learning},
+  title={Temperature Transferable Electronic Coarse-Graining via Deep Kernel Learning and Active Learning},
   author={Sivaraman, Ganesh and Jackson, Nicholas},
   journal={XX},
   volume={YY},
