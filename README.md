@@ -1,5 +1,6 @@
 # AL4ECG : Active Learning for Electronic Coarse Graining 
 
+<img src='./IMG/AL4ECG.png' alt='AL4ECG.'></img>
 
 Documentation for the active learning (AL) workflow developed as a part of the article "Multi-Temperature Electronic Coarse-Graining via Deep Kernels and Active Learning". 
 __For more details, please refer to the [paper](https://www.url_to_be_added.com).__
