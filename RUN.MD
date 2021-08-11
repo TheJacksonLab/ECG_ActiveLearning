@@ -1,11 +1,12 @@
 
-1. For the base workflow for training a GPR or DKL at a fixed temperatures can be found in [run_ecg.py](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/workflow/run_ecg.py). The usage is listed below:
+1. For the base workflow for training a GPR or DKL at a fixed temperatures can be found in [run_singleT_ECG.py](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/workflow/run_singleT_ECG.py). The usage is listed below:
 
 
 ```
-$ python run_ecg.py -h
-usage: run_ecg.py [-h] -json JSONFILENAME [-Nt] [-is] [-qw] [-s] [-ml] [-k]
-                  [-ni] [-rs]
+$ python run_singleT_ECG.py -h
+
+usage: run_singleT_ECG.py [-h] -json JSONFILENAME [-Nt] [-is] [-qw] [-s] [-ml]
+                          [-k] [-ni] [-rs]
 
 A python workflow to run active learning for Electronic Coarse Graining
 
@@ -22,25 +23,42 @@ optional arguments:
   -ni , --niter         Number of iteration for converging GP
   -rs , --randomseed    Initialize the random seed
 
+
 ```
 
 The mandatory configuration file has the following format with a path and specification of the single temperature csv file.
 
 ```
 {
-"csv_name" : "/path/to/wB97x_rigid_gbcg_300K_cut.csv",
-"train_range" : [0,8500],
-"test_range" : [8700,9701],
+"path" : "/path/to/numpy/data/folder",
+"train_file" : "train_rigid.npy",
+"test_file" : "test_rigid.npy",
 "x_slice" : [0, 153],
-"y_slice" : -3
+"y_slice" : -4 , 
+"train_refT_Xslice" : [2, 3],
+"jump"    : {"1000K":[0, 1000],
+       "650K":[1000, 2000],
+       "300K":[2000, 3000],
+       "50K":[3000, 4000]}
 }
 ```
+The `y_slice` corresponds to HOMO. The last index of the numpy array has the reference temperature label (e.g. 1000 K). `train_refT_Xslice` is the row slices of the single temperature training dataset with in the numpy arrays.  
 
+|train_refT_Xslice| T(K)|
+-------------------------
+|[0,1]       | 1000     |
+-------------------------
+|[1,2]       | 650      |
+-------------------------
+|[2,3]       | 300     |
+-------------------------
+|[3,4]       | 50      |
+-------------------------
 
 Example usage with a DKL is listed below 
 
 ```
-python -u  run_ecg.py  -json  config.json  -Nt 1500  -is  3   -qw 6900 -ml DKL   -s  emoc   -k  RBF  -ni 300   -rs  123   > ECG_trial.out
+python -u  run_singleT_ECG.py   -json  config.json  -Nt 1500  -is  3   -qw  6995  -ml DKL   -s  emoc   -k  RBF  -ni 300   -rs  111   > ECG_trial.out
 ```
 
 
