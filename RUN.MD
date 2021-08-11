@@ -45,13 +45,13 @@ The mandatory configuration file has the following format with a path and specif
 The `y_slice` corresponds to HOMO. The last index of the numpy array has the reference temperature label (e.g. 1000 K). `train_refT_Xslice` is the row slices of the single temperature training dataset with in the numpy arrays.  
  
  | train_refT_Xslice | T(K) |
- ----------------------------
+ | ----------- | ---------  |
  | [0,1]       | 1000       |
- ----------------------------
+ | ----------- | ---------  |
  | [1,2]       | 650        |
- ----------------------------
+ | ----------- | ---------  |
  | [2,3]       | 300        |
- ----------------------------
+ | ----------- | ---------  |
  | [3,4]       | 50         |
  ----------------------------
 
