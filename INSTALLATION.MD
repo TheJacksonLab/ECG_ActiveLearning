@@ -1,7 +1,7 @@
 # Installation instruction for GPyTorch  on NVIDIA A100  GPUS
 
 This section covers the compilation of PyTorch and related libraries. Our goal is to take advantage of the hardware acceleration that comes with NVIDIA A100 GPU 
-installed at [LCRC SWING cluster](https://www.lcrc.anl.gov/systems/resources/swing/) 
+available at [LCRC SWING cluster](https://www.lcrc.anl.gov/systems/resources/swing/) 
 and [ALCF ThetaGPU](https://www.alcf.anl.gov/support-center/theta/theta-thetagpu-overview#theta-gpu). 
 
 Now we will initialize the process by using the conda  environment file [A100_env.yml](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/A100_env.yml). 
