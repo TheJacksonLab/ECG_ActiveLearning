@@ -2,7 +2,7 @@
 
 <img src='./IMG/AL4ECG.png' alt='AL4ECG.'></img>
 
-Documentation for the active learning (AL) workflow developed as a part of the article "Multi-Temperature Electronic Coarse-Graining via Deep Kernels and Active Learning". 
+Documentation for the active learning (AL) workflow developed as a part of the article "Coarse-Grained Density Functional Theory Predictions via Deep Kernel Learning". 
 __For more details, please refer to the [paper](https://www.url_to_be_added.com).__
 
 
@@ -51,7 +51,7 @@ Running the workflow is extensively covered in [RUN.MD](https://github.com/TheJa
 If you are using this active learning workflow  in your research paper, please cite us as
 ```
 @article{AL4ECG,
-  title={Multi-Temperature Electronic Coarse-Graining via Deep Kernels and Active Learning},
+  title={Coarse-Grained Density Functional Theory Predictions via Deep Kernel Learning},
   author={Sivaraman, Ganesh and Jackson, Nicholas},
   journal={XX},
   volume={YY},
