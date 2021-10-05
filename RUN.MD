@@ -94,7 +94,7 @@ python -u  run_mixedT_ECG.py   -json  config.json  -Nt 1500  -is  3   -qw 32495 
 
 
 
-The format for the configuration file (--json) to be used with the mixed temperature run is listed below. The hyperparameter json is frozen for a given CG resolution. Further the LHS dataset and example configurations can be found [here](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/DATA/LHS.tar.gz).
+The format for the configuration file (--json) to be used with the mixed temperature run is listed below. The hyperparameter json is frozen for a given CG resolution. Further, the LHS dataset and example configurations can be found [here](https://github.com/TheJacksonLab/ECG_ActiveLearning/blob/main/DATA/LHS.tar.gz).
 
 
 
