@@ -50,7 +50,13 @@ Running the workflow is extensively covered in [RUN.MD](https://github.com/TheJa
 
 If you are using this active learning workflow  in your research paper, please cite us as
 ```
-@article{jackson_sivaraman_2021, place={Cambridge}, title={Coarse-Grained Density Functional Theory Predictions via Deep Kernel Learning}, DOI={10.33774/chemrxiv-2021-bkdfv}, journal={ChemRxiv}, publisher={Cambridge Open Engage}, author={Jackson, Nicholas and Sivaraman, Ganesh}, year={2021}}
+@article{jackson_sivaraman_2021,
+place={Cambridge},
+title={Coarse-Grained Density Functional Theory Predictions via Deep Kernel Learning}, 
+DOI={10.33774/chemrxiv-2021-bkdfv}, journal={ChemRxiv},
+publisher={Cambridge Open Engage}, 
+author={Jackson, Nicholas and Sivaraman, Ganesh}, 
+year={2021}}
 ```
 
 ## Acknowledgements
