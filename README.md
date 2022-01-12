@@ -3,7 +3,7 @@
 <img src='./IMG/AL4ECG.png' alt='AL4ECG.'></img>
 
 Documentation for the active learning (AL) workflow developed as a part of the article "Coarse-Grained Density Functional Theory Predictions via Deep Kernel Learning". 
-__For more details, please refer to the [preprint](https://chemrxiv.org/engage/chemrxiv/article-details/615c76ae7d3da5aa28edb9fb).
+__For more details, please refer to the [paper](https://pubs.acs.org/doi/full/10.1021/acs.jctc.1c01001).
 
 
 
@@ -50,13 +50,26 @@ Running the workflow is extensively covered in [RUN.MD](https://github.com/TheJa
 
 If you are using this active learning workflow  in your research paper, please cite us as
 ```
-@article{jackson_sivaraman_2021,
-place={Cambridge},
-title={Coarse-Grained Density Functional Theory Predictions via Deep Kernel Learning}, 
-DOI={10.33774/chemrxiv-2021-bkdfv}, journal={ChemRxiv},
-publisher={Cambridge Open Engage}, 
-author={Jackson, Nicholas and Sivaraman, Ganesh}, 
-year={2021}}
+@article{doi:10.1021/acs.jctc.1c01001,
+author = {Sivaraman, Ganesh and Jackson, Nicholas E.},
+title = {Coarse-Grained Density Functional Theory Predictions via Deep Kernel Learning},
+journal = {Journal of Chemical Theory and Computation},
+volume = {0},
+number = {0},
+pages = {null},
+year = {0},
+doi = {10.1021/acs.jctc.1c01001},
+
+URL = { 
+        https://doi.org/10.1021/acs.jctc.1c01001
+    
+},
+eprint = { 
+        https://doi.org/10.1021/acs.jctc.1c01001
+    
+}
+
+}
 ```
 
 ## Acknowledgements
