@@ -3,7 +3,7 @@
 <img src='./IMG/AL4ECG.png' alt='AL4ECG.'></img>
 
 Documentation for the active learning (AL) workflow developed as a part of the article "Coarse-Grained Density Functional Theory Predictions via Deep Kernel Learning". 
-__For more details, please refer to the [paper](https://pubs.acs.org/doi/full/10.1021/acs.jctc.1c01001).
+__For more details, please refer to the [paper](https://pubs.acs.org/doi/full/10.1021/acs.jctc.1c01001)__.
 
 
 
