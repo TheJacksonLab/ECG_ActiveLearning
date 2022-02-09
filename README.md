@@ -54,11 +54,12 @@ If you are using this active learning workflow  in your research paper, please c
 author = {Sivaraman, Ganesh and Jackson, Nicholas E.},
 title = {Coarse-Grained Density Functional Theory Predictions via Deep Kernel Learning},
 journal = {Journal of Chemical Theory and Computation},
-volume = {0},
-number = {0},
-pages = {null},
-year = {0},
+volume = {18},
+number = {2},
+pages = {1129-1141},
+year = {2022},
 doi = {10.1021/acs.jctc.1c01001},
+    note ={PMID: 35020388},
 
 URL = { 
         https://doi.org/10.1021/acs.jctc.1c01001
