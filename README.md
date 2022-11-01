@@ -2,7 +2,7 @@
 
 <img src='./IMG/AL4ECG.png' alt='AL4ECG.'></img>
 
-Documentation for the active learning (AL) workflow developed as a part of the article "Coarse-Grained Density Functional Theory Predictions via Deep Kernel Learning". 
+Documentation for the active learning (AL) workflow developed as a part of the article Sivaraman, G.; Jackson, N.E. "Coarse-Grained Density Functional Theory Predictions via Deep Kernel Learning" J. Chem. Theory Comput. 2022, 18, 2, 1129-1141. 
 __For more details, please refer to the [paper](https://pubs.acs.org/doi/full/10.1021/acs.jctc.1c01001)__.
 
 
